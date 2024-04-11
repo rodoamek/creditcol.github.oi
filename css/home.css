@@ -1,0 +1,40 @@
+.home{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(/HTML/creditcol/img/bg.png);
+    background-size: cover;
+}
+
+.navbar {
+    width: 100%;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: none;
+}
+
+nav a {
+    margin: 0 30px; /* Espacio entre los enlaces */
+
+}
+
+.logo{
+    width: auto;
+    height: 100px;
+}
+
+footer {
+    background-color: #1f2172;
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+    border-top: 2px solid #fff; /* Borde superior */
+    margin-top: 50px; /* Margen superior */
+    /*display: flex; /* Establece el contenedor del footer como un contenedor de flexbox */
+    justify-content: space-between; /* Distribuye el espacio entre las columnas */
+    flex: 1; /* Hace que las columnas ocupen un espacio igual dentro del contenedor de flexbox */
+    padding: 10px; /* Añade espacio alrededor del contenido de cada columna */
+}
