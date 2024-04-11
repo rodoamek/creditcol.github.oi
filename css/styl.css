@@ -26,6 +26,10 @@ nav a {
     height: 100px;
 }
 
+.log2{
+    float: right;
+}
+
 footer {
     background-color: #1f2172;
     color: #fff;
@@ -33,7 +37,7 @@ footer {
     text-align: center;
     border-top: 2px solid #fff; /* Borde superior */
     margin-top: 50px; /* Margen superior */
-    /*display: flex; /* Establece el contenedor del footer como un contenedor de flexbox */
+    display: flex; /* Establece el contenedor del footer como un contenedor de flexbox */
     justify-content: space-between; /* Distribuye el espacio entre las columnas */
     flex: 1; /* Hace que las columnas ocupen un espacio igual dentro del contenedor de flexbox */
     padding: 10px; /* Añade espacio alrededor del contenido de cada columna */
