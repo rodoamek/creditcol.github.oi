@@ -13,7 +13,7 @@
         <meta property="og:description" content="CreditCol, tu mejor opción">
         <meta property="og:image" content="/img/creditcol.png">
         <meta name="theme-color" content="#09f"> <!-- Color de la barra -->
-        <link rel="icon" type="img/jpg" href="/img/icon.png"> <!-- Logo al lado de la pestaña -->
+        <link rel="icon" type="img/png" href="/img/icon.png"> <!-- Logo al lado de la pestaña -->
         <link rel="stylesheet" href="/css/styl.css">
     </head>
 
@@ -30,9 +30,10 @@
                         <a class="link" href="contact.html">Contacto</a>
                     </nav>
                 </header>
+            
                 <div>
                     <h1>PRÉSTAMOS DE DINERO 100% EN LÍNEA</h1>
-                    <p>Con Credicol tienes el crédito online más seguro, rápido y flexible del mercado.</p>
+                    <p>Con Credicol tienes el crédito online más seguro, rápido y flexible del mercado.</p>  
                     <img src="/img/credit.png" 
                          alt="logo" 
                          style="float:right"
@@ -44,38 +45,102 @@
         <footer>
             <div class="columna">
                 <h3>INFORMACIÓN ÚTIL</h3>
+
+                <dialog id="dialog">
+                    <h1>Preguntas Frecuentes</h1>
+                    <details>
+                        <summary>Cualquier persona peude solicitar credito?</summary>
+                        <p>si, y es totalmente virtual</p>
+                    </details>
+                    <details>
+                        <summary>Como consultar el estado de mi credito?</summary>
+                        <p>debes dar clic en el enlace Consulta tu estado</p>
+                    </details>
+                    <button id="close">Cerrar modal</button>
+                </dialog>
+
                 <ul class="enlace">
-                    <li><a href="#">Preguntas frecuentes</a></li>
-                    <li><a href="contact.html">Contáctanos</a></li>
-                    <li><a href="team.html">Nosotros</a></li>
+                    <button id="show">Preguntas Frecuentes</button>
+                    <li><a href="contact.html" class="boton">Contactanos</a></li>
+                    <li><a href="team.html" class="boton">Nosotros</a></li>
                 </ul>
             </div>
+            
+            <script>
+                const showButton = document.getElementById('show');
+                const dialog = document.getElementById('dialog');
+                const closeButton = document.getElementById('close');
+            
+                showButton.addEventListener('click', () => {
+                    dialog.showModal();
+                });
+            
+                closeButton.addEventListener('click', () => {
+                    dialog.close();
+                });
+            </script>          
             
             <div class="columna">
                 <h3>MI CUENTA</h3>
                 <ul class="enlace">
-                    <li><a href="login.html">Iniciar sesión</a></li>
-                    <li><a href="status.html">Estado credito</a></li>
-                    <li><a href="contact.html">Contactanos</a></li>
+                    <li><a href="login.html" class="boton">Iniciar sesión</a></li>
+                    <li><a href="status.html" class="boton">Estado credito</a></li>
                 </ul>
             </div>
             
             <div class="columna">
                 <h3>LEGAL</h3>
-                <ul class="enlace">
-                    <li><a href="#">Términos y condiciones</a></li>
-                    <li><a href="#">Habeas data</a></li>
-                </ul>
+            
+                <dialog id="tdialog">
+                    <h1>Términos y Condiciones</h1>
+                    <p>El Aliado será el único responsable y encargado de las reclamaciones por protección al consumidor, efectividad de la garantía, productos defectuosos, cancelaciones y cualquier reclamación que tengas relacionadas con el producto o servicio adquirido. Addi no comparece a ni es parte de tu relación con el Aliado en condición de proveedor de los bienes y servicios que adquieres con este. Por eso, Addi no compartirá responsabilidad con el Aliado en esta materia. Esto no limita nuestra responsabilidad frente a las obligaciones y derechos que surgen exclusivamente de nuestra relación comercial con la emisión de tu crédito.</p>
+                    <button id="tclose">Cerrar modal</button>
+                </dialog>
+                <button id="tshow">Términos y Condiciones</button>
+                <br/>
+                <dialog id="hdialog">
+                    <h1>Habeas data</h1>
+                    <p>La Ley 1266 de 2008, también conocida como Ley de Habeas Data, se aplica a todos los datos personales financieros, crediticios, comerciales y de servicios registrados en un banco de datos . En este sentido, la aplicación de la Ley 1266 de 2008 está encaminada a regular el uso de esa información y por tanto otro tipo de datos (por ejemplo aquellos mantenidos en un ámbito exclusivamente personal o doméstico o los que se incluyen en una historia clínica) se encuentran excluidos de la aplicación de esta norma. </p>
+                    <button id="hclose">Cerrar modal</button>
+                </dialog>
+            
+                <button id="hshow">Habeas Data</button>
             </div>
+            <script>
+                const tshowButton = document.getElementById('tshow');
+                const tdialog = document.getElementById('tdialog');
+                const tcloseButton = document.getElementById('tclose');
+            
+                tshowButton.addEventListener('click', () => {
+                    tdialog.showModal();
+                });
+            
+                tcloseButton.addEventListener('click', () => {
+                    tdialog.close();
+                });
+            </script> 
+            <script>
+                const hshowButton = document.getElementById('hshow');
+                const hdialog = document.getElementById('hdialog');
+                const hcloseButton = document.getElementById('hclose');
+            
+                hshowButton.addEventListener('click', () => {
+                    hdialog.showModal();
+                });
+            
+                hcloseButton.addEventListener('click', () => {
+                    hdialog.close();
+                });
+            </script>          
             
             <div class="columna">
                 <h3>REDES SOCIALES</h3>
-                <ul class="redes-sociales">
-                    <li><a href="#"><img src="/img/v_co.png" alt="Comentarios"></a></li>
-                    <li><a href="#"><img src="/img/v_fb.png" alt="Facebook"></a></li>
-                    <li><a href="#"><img src="/img/v_wa.png" alt="WhatsApp"></a></li>
-                    <li><a href="#"><img src="/img/v_tt.png" alt="TikTok"></a></li>
-                    <li><a href="#"><img src="/img/v_ig.png" alt="Instagram"></a></li>
+                <ul class="redes">
+                    <li><a href="/contact.html"><img src="/img/v_co.png" alt="Comentarios"></a></li>
+                    <li><a href="https://facebook.com"><img src="/img/v_fb.png" alt="Facebook"></a></li>
+                    <li><a href="https://whatsapp.com"><img src="/img/v_wa.png" alt="WhatsApp"></a></li>
+                    <li><a href="https://tiktok.com"><img src="/img/v_tt.png" alt="TikTok"></a></li>
+                    <li><a href="https://instagram.com"><img src="/img/v_ig.png" alt="Instagram"></a></li>
                 </ul>
             </div>
         </footer>
