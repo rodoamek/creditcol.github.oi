@@ -1,6 +1,30 @@
-h1{
+.tituloIndex {
     color: #2B64A1;
-    font-family: poppins;
-    font-size: 30px;
-    
+    font-family: 'Poppins', sans-serif; 
+    font-size: 60px;
+    position: absolute;
+    top: 60px; 
+    left: 30px; 
+    width: 520px; 
+    height: 340px; 
+    padding: 20px; 
+    margin-top: 60px;
+}
+
+.subIndex{
+    color: #2b64a1;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    width: 560px;
+    height: 100px;
+    padding: 20px;
+    display: block;
+    margin-top: 300px;
+    margin-left: 30px;
+}
+
+.logoC {
+    float: right;
+    margin-top: -300px; /* Ajusta este valor según sea necesario para que la imagen esté a la misma altura que el h1 */
+    margin-left: 20px; /* Espacio entre la imagen y los otros elementos */
 }
