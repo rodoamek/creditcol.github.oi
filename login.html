@@ -100,7 +100,7 @@
                 <br/>
                 <dialog id="dataDialog">
                     <h1>Habeas data</h1>
-                    <p>La Ley 1266 de 2008, también conocida como Ley de Habeas Data, se aplica a todos los datos personales financieros, crediticios, comerciales y de servicios registrados en un banco de datos . En este sentido, la aplicación de la Ley 1266 de 2008 está encaminada a regular el uso de esa información y por tanto otro tipo de datos (por ejemplo aquellos mantenidos en un ámbito exclusivamente personal o doméstico o los que se incluyen en una historia clínica) se encuentran excluidos de la aplicación de esta norma. </p>
+                    <p>La Ley 1266 de 2008, también conocida como Ley de Habeas Data, se aplica a todos los datos personales financieros, crediticios, comerciales y de servicios registrados en un banco de datos. En este sentido, la aplicación de la Ley 1266 de 2008 está encaminada a regular el uso de esa información y por tanto otro tipo de datos (por ejemplo aquellos mantenidos en un ámbito exclusivamente personal o doméstico o los que se incluyen en una historia clínica) se encuentran excluidos de la aplicación de esta norma.</p>
                     <button id="dataClose">Cerrar modal</button>
                 </dialog>
             
@@ -124,14 +124,14 @@
                 const dataDialog = document.getElementById('dataDialog');
                 const dataCloseButton = document.getElementById('dataClose');
             
-                hshowButton.addEventListener('click', () => {
-                    hdialog.showModal();
+                dataShowButton.addEventListener('click', () => {
+                    dataDialog.showModal();
                 });
             
-                hcloseButton.addEventListener('click', () => {
-                    hdialog.close();
+                dataCloseButton.addEventListener('click', () => {
+                    dataDialog.close();
                 });
-            </script>          
+            </script>         
             
             <div class="columna">
                 <h3>REDES SOCIALES</h3>
