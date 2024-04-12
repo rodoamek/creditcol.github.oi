@@ -12,7 +12,7 @@
         <meta property="og:description" content="CreditCol, tu mejor opción">
         <meta property="og:image" content="/img/creditcol.png">
         <meta name="theme-color" content="#09f"> 
-        <link rel="icon" type="image/png" href="/img/icon.png"> <!-- Logo al lado de la pestaña -->
+        <link rel="icon" type="image/png" href="/img/icon.png">
         <link rel="stylesheet" href="/css/styl.css">
         <link rel="stylesheet" href="/css/sindex.css">
     </head>
@@ -56,7 +56,7 @@
                         <summary>Como consultar el estado de mi credito?</summary>
                         <p>debes dar clic en el enlace Consulta tu estado</p>
                     </details>
-                    <button id="faqClose">Cerrar modal</button>
+                    <button id="faqShow">Cerrar modal</button>
                 </dialog>
 
                 <ul class="enlace">
@@ -67,9 +67,9 @@
             </div>
             
             <script>
-                const showButton = document.getElementById('faqShow');
-                const dialog = document.getElementById('faqDialog');
-                const closeButton = document.getElementById('faqClose');
+                const faqShowButton = document.getElementById('faqShow');
+                const faqDialog = document.getElementById('faqDialog');
+                const faqCloseButton = document.getElementById('faqClose');
             
                 showButton.addEventListener('click', () => {
                     dialog.showModal();
@@ -107,29 +107,29 @@
                 <button id="dataShow">Habeas Data</button>
             </div>
             <script>
-                const tshowButton = document.getElementById('terShow');
-                const tdialog = document.getElementById('terDialog');
-                const tcloseButton = document.getElementById('terClose');
+                const terShowButton = document.getElementById('terShow');
+                const terDialog = document.getElementById('terDialog');
+                const terCloseButton = document.getElementById('terClose');
             
                 tshowButton.addEventListener('click', () => {
-                    tdialog.showModal();
+                    terDialog.showModal();
                 });
             
                 tcloseButton.addEventListener('click', () => {
-                    tdialog.close();
+                    terDialog.close();
                 });
             </script> 
             <script>
-                const hshowButton = document.getElementById('dataShow');
-                const hdialog = document.getElementById('dataDialog');
-                const hcloseButton = document.getElementById('dataClose');
+                const dataShowButton = document.getElementById('dataShow');
+                const dataDialog = document.getElementById('dataDialog');
+                const dataCloseButton = document.getElementById('dataClose');
             
                 hshowButton.addEventListener('click', () => {
-                    hdialog.showModal();
+                    dataDialog.showModal();
                 });
             
                 hcloseButton.addEventListener('click', () => {
-                    hdialog.close();
+                    dataDialog.close();
                 });
             </script>          
             
