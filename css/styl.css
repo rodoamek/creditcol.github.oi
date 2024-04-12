@@ -86,11 +86,6 @@ footer {
     font-size: 20px; 
 }
 
-#dialog {
-    background-color: rgba(82, 167, 93, 0.4); 
-    border: 5px solid #2B64A1;
-}
-
 #dialog h1 {
     color: #2B64A1; 
 }
