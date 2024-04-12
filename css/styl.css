@@ -106,20 +106,10 @@ footer {
     color: #2B64A1; 
     font-family: 'Poppins', sans-serif; 
 }
-#faqDialog button {
-    background-color: #2B64A1; 
-    color: white; 
-}
-
 #terDialog h1 {
     color: #2B64A1; 
     font-family: 'Poppins', sans-serif; 
 }
-#terDialog button {
-    background-color: #2B64A1; 
-    color: white; 
-}
-
 #dataDialog h1 {
     color: #2B64A1; 
     font-family: 'Poppins', sans-serif; 
@@ -165,7 +155,8 @@ footer {
     border-width: 0;
     box-shadow: none;
     box-sizing: border-box;
-    color: #FFFFFF;
+    color: #0b033b;
+    font-weight: 600;
     cursor: pointer;
     display: inline-flex;
     font-family: CircularStd,sans-serif;
@@ -184,7 +175,6 @@ footer {
     vertical-align: top;
     white-space: nowrap;
 }
-
 #faqDialog button {
     align-items: center;
     appearance: none;
@@ -195,22 +185,23 @@ footer {
     border-width: 0;
     box-shadow: none;
     box-sizing: border-box;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: inline-flex;
-  font-family: CircularStd,sans-serif;
-  font-size: 1rem;
-  height: auto;
-  justify-content: center;
-  line-height: 1.5;
-  padding: 6px 20px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  transition: background-color .2s,background-position .2s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: top;
-  white-space: nowrap;
+    color: #0b033b;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: CircularStd,sans-serif;
+    font-size: 1rem;
+    height: auto;
+    justify-content: center;
+    line-height: 1.5;
+    padding: 6px 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color .2s,background-position .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    white-space: nowrap;
 }
