@@ -1,3 +1,33 @@
+.body html {
+    height: 100%;
+    margin: 0;
+}
+.contenido {
+    display: flex;
+    height: 100%;
+}
+
+/*logo*/
+.con-logo {
+    flex: 1; 
+    padding: 20px;
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    height: 100%;
+}
+.logoC img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+/*inicio sesión*/
+.con-texto{
+    flex: 1;
+    display: flex; 
+    padding: 20px;
+}
+
 .tituloIndex {
     color: #2B64A1;
     font-family: 'Poppins', sans-serif; 

@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .home{
     margin: 0;
     padding: 0;
@@ -58,22 +64,17 @@ footer {
     list-style-type: none; 
 }
 
-#faqDialog {
-    background-color: #ffffff; 
-    border: 2px solid #2b64a1; 
-    border-radius: 30px; 
-}
-#terDialog {
-    background-color: #ffffff; 
-    border: 2px solid #2b64a1; 
-    border-radius: 30px; 
-}
+#faqDialog,
+#terDialog,
 #dataDialog {
     background-color: #ffffff; 
     border: 2px solid #2b64a1; 
     border-radius: 30px; 
 }
 
+
+#terShow,
+#dataShow,
 #faqShow {
     background-color: transparent; 
     border: none; 
@@ -102,6 +103,8 @@ footer {
     font-size: 20px; 
 }
 
+#terDialog h1,
+#dataDialog h1,
 #faqDialog h1 {
     color: #2B64A1; 
     font-family: 'Poppins', sans-serif; 
@@ -115,6 +118,9 @@ footer {
     font-family: 'Poppins', sans-serif; 
 }
 
+
+#dataDialog button,
+#faqDialog button
 #terDialog button {
     align-items: center;
     appearance: none;
@@ -145,63 +151,18 @@ footer {
     vertical-align: top;
     white-space: nowrap;
 }
-#dataDialog button {
-    align-items: center;
-    appearance: none;
-    background-color: #09456d;
-    background-image: linear-gradient(1deg, #44e066, #1182ce 99%);
-    background-size: calc(100% + 20px) calc(100% + 20px);
-    border-radius: 100px;
-    border-width: 0;
-    box-shadow: none;
-    box-sizing: border-box;
-    color: #0b033b;
-    font-weight: 600;
-    cursor: pointer;
-    display: inline-flex;
-    font-family: CircularStd,sans-serif;
-    font-size: 1rem;
-    height: auto;
-    justify-content: center;
-    line-height: 1.5;
-    padding: 6px 20px;
-    position: relative;
+
+
+footer {
+    background-color: #2B64A1;
+    color: #fff;
+    padding: 10px;
     text-align: center;
-    text-decoration: none;
-    transition: background-color .2s,background-position .2s;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    vertical-align: top;
-    white-space: nowrap;
+    width: 100%;
+    display: flex; 
 }
-#faqDialog button {
-    align-items: center;
-    appearance: none;
-    background-color: #09456d;
-    background-image: linear-gradient(1deg, #44e066, #1182ce 99%);
-    background-size: calc(100% + 20px) calc(100% + 20px);
-    border-radius: 100px;
-    border-width: 0;
-    box-shadow: none;
-    box-sizing: border-box;
-    color: #0b033b;
-    font-weight: 600;
-    cursor: pointer;
-    display: inline-flex;
-    font-family: CircularStd,sans-serif;
-    font-size: 1rem;
-    height: auto;
-    justify-content: center;
-    line-height: 1.5;
-    padding: 6px 20px;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    transition: background-color .2s,background-position .2s;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    vertical-align: top;
-    white-space: nowrap;
+
+.columna{
+    flex: 1; 
+    padding: 10px; 
 }
