@@ -52,9 +52,3 @@
     margin-top: 300px;
     margin-left: 30px;
 }
-
-.logoC {
-    float: right;
-    margin-top: -300px; /* Ajusta este valor según sea necesario para que la imagen esté a la misma altura que el h1 */
-    margin-left: 20px; /* Espacio entre la imagen y los otros elementos */
-}
