@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .home{
     margin: 0;
     padding: 0;
@@ -41,39 +47,26 @@ nav a {
     height: 100px;
 }
 
-footer {
-    background-color: #2B64A1;
-    color: #fff;
-    padding: 50px;
-    text-align: center;
-    border-top: 2px solid #fff; 
-    margin-top: 50px; 
-    display: flex; 
-    justify-content: space-between; 
-    flex: 1; 
-    padding: 10px; 
-}
 
 .redes{
     list-style-type: none; 
 }
 
-#faqDialog {
-    background-color: #ffffff; 
-    border: 2px solid #2b64a1; 
-    border-radius: 30px; 
-}
-#terDialog {
-    background-color: #ffffff; 
-    border: 2px solid #2b64a1; 
-    border-radius: 30px; 
-}
+#faqDialog,
+#terDialog,
 #dataDialog {
-    background-color: #ffffff; 
+    background-color: #f4f6fc; 
     border: 2px solid #2b64a1; 
-    border-radius: 30px; 
+    border-radius: 30px;
+    padding: 30px;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
 }
 
+
+#terShow,
+#dataShow,
 #faqShow {
     background-color: transparent; 
     border: none; 
@@ -83,49 +76,40 @@ footer {
     font-family: 'Poppins', sans-serif; 
     font-size: 20px;
 }
-#terShow {
-    background-color: transparent; 
-    border: none; 
-    color: #FFF9F9; 
-    cursor: pointer; 
-    padding: 0; 
-    font-family: 'Poppins', sans-serif; 
-    font-size: 20px; 
-}
-#dataShow {
-    background-color: transparent; 
-    border: none; 
-    color: #FFF9F9; 
-    cursor: pointer; 
-    padding: 0; 
-    font-family: 'Poppins', sans-serif; 
-    font-size: 20px; 
-}
 
+#terDialog h1,
+#dataDialog h1,
 #faqDialog h1 {
     color: #2B64A1; 
-    font-family: 'Poppins', sans-serif; 
-}
-#terDialog h1 {
-    color: #2B64A1; 
-    font-family: 'Poppins', sans-serif; 
-}
-#dataDialog h1 {
-    color: #2B64A1; 
-    font-family: 'Poppins', sans-serif; 
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px; 
 }
 
+#terDialog p,
+#dataDialog p,
+#faqDialog p {
+    color: #06213d; 
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+}
+
+
+#dataDialog button,
+#faqDialog button,
 #terDialog button {
     align-items: center;
+    margin-top: 20px;
     appearance: none;
     background-color: #09456d;
-    background-image: linear-gradient(1deg, #44e066, #1182ce 99%);
+    background-image: linear-gradient(1deg, #96e4a7, #8db8d4 99%);
     background-size: calc(100% + 20px) calc(100% + 20px);
     border-radius: 100px;
     border-width: 0;
     box-shadow: none;
     box-sizing: border-box;
-    color: #0b033b;
+    color: #09456d;
     font-weight: 600;
     cursor: pointer;
     display: inline-flex;
@@ -145,63 +129,18 @@ footer {
     vertical-align: top;
     white-space: nowrap;
 }
-#dataDialog button {
-    align-items: center;
-    appearance: none;
-    background-color: #09456d;
-    background-image: linear-gradient(1deg, #44e066, #1182ce 99%);
-    background-size: calc(100% + 20px) calc(100% + 20px);
-    border-radius: 100px;
-    border-width: 0;
-    box-shadow: none;
-    box-sizing: border-box;
-    color: #0b033b;
-    font-weight: 600;
-    cursor: pointer;
-    display: inline-flex;
-    font-family: CircularStd,sans-serif;
-    font-size: 1rem;
-    height: auto;
-    justify-content: center;
-    line-height: 1.5;
-    padding: 6px 20px;
-    position: relative;
+
+
+footer {
+    background-color: #2B64A1;
+    color: #fff;
+    padding: 10px;
     text-align: center;
-    text-decoration: none;
-    transition: background-color .2s,background-position .2s;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    vertical-align: top;
-    white-space: nowrap;
+    width: 100%;
+    display: flex; 
 }
-#faqDialog button {
-    align-items: center;
-    appearance: none;
-    background-color: #09456d;
-    background-image: linear-gradient(1deg, #44e066, #1182ce 99%);
-    background-size: calc(100% + 20px) calc(100% + 20px);
-    border-radius: 100px;
-    border-width: 0;
-    box-shadow: none;
-    box-sizing: border-box;
-    color: #0b033b;
-    font-weight: 600;
-    cursor: pointer;
-    display: inline-flex;
-    font-family: CircularStd,sans-serif;
-    font-size: 1rem;
-    height: auto;
-    justify-content: center;
-    line-height: 1.5;
-    padding: 6px 20px;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    transition: background-color .2s,background-position .2s;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    vertical-align: top;
-    white-space: nowrap;
+
+.columna{
+    flex: 1; 
+    padding: 10px; 
 }
