@@ -73,13 +73,13 @@
 
                     <!-- Inicio de Formulario -->
                     <div class="form_contact">
-                        <form action="">
+                        <form action="" id="MyFormContact">
                             <div class="input_container">
-                                <input type="text" name="nombre" id="nombre" placeholder="Nombres*" required>
+                                <input type="text" name="name" id="name" placeholder="Nombres*" required>
                             </div>
 
                             <div class="input_container">
-                                <input type="text" name="apellido" id="apellido" placeholder="Apellidos*" required>
+                                <input type="text" name="name" id="name" placeholder="Apellidos*" required>
                             </div>
 
                             <div class="input_container">
@@ -87,13 +87,14 @@
                             </div>
 
                             <div class="input_container">
-                                <input type="number" name="telefono" id="telefono" placeholder="Teléfono de Contacto*" required>
+                                <input type="number" name="telefono" id="telefono" placeholder="Teléfono de Contacto*" min="1" max="10" required>
                             </div>
 
                             <div class="input_container">
+
                                 <!-- Lista de paises -->
                                 <select name="paises" id="paises" required>
-<option value=""selected>Seleccione su país*</option>
+<option value="" disable hidden >Seleccione su país*</option>
 <option value="AF">Afganistán</option>
 <option value="AL">Albania</option>
 <option value="DE">Alemania</option>
@@ -336,13 +337,15 @@
                             </div>
 
                             <div class="input_container">
-                                <input type="checkbox" name="politica" id="politica">
+                                <input type="checkbox" name="politica" id="politica" required>
                                 <p>Acepto la <span>politica de privacidad</span></p>
                             </div>
 
                             <div class="input_container">
                                 <input type="button" name="button" id="button" value="SOLICITAR INFORMACIÓN">
                             </div>
+
+                            <div id="mensajeError" class="error-message" style="display: none; text-align: center;">Por favor, completa todos los campos marcados en rojo.</div>
                         </form>
                     </div>
                     
@@ -456,5 +459,9 @@
             </div>
         </footer>
         
+
+            <!-- Validaciones en inputs -->
+        <script src="./js/Validaciones Contact/validation_name.js"></script>
+
     </body>
 </html>
