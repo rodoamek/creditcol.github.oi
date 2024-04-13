@@ -1,0 +1,323 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; 
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/*Header and navbar*/
+
+.navbar {
+    width: 100%;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.logo{
+    width: auto;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+nav a {
+    margin: 0 30px;
+}
+
+.link {
+    text-decoration: none;
+    color: #2B64A1;
+}
+
+/*Image from the background*/
+.background{
+    width: 100vw;
+    height: 100vh;
+    background: url(/creditcol.github.oi/img/bg.png);
+    background-size: cover;
+}
+
+/*Content_Comentaries*/
+
+.content {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.container_comentaries {
+    margin-left: 40px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.header_comentaries {
+    display: flex;
+    width: auto;
+    height: 136px;
+    justify-content: center;
+    background-color: #2B64A1;
+}
+
+.container_text_comentaries {
+    width: 60%;
+    height: 100%;
+}
+
+.title_comentaries {
+    padding: 4px;
+    font-size: 30px;
+    color: white;
+}
+
+.title_comentaries span {
+    font-weight: bold;
+}
+
+#paragraph {
+    display: block;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/*Input Text*/
+.input_comentaries input{
+    width: 90%;
+    height: 200px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 12px rgb(70, 70, 70);
+    background-color: #F6F6F6;
+    margin-bottom: 20px;
+}
+
+/*Input Submit*/
+.input_submit {
+    align-self: end;
+}
+
+.input_submit #botoon {
+    margin-right: 35px;
+    border: none;
+    border-radius: 8px;
+    padding: 14px;
+    font-weight: bold;
+    color: white;
+    background: rgb(0, 0, 85);
+}
+
+
+/*Content_Contact*/
+.container_contact {
+    margin-left: 20px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header_contact {
+    width: auto;
+    height: 136px;
+    display: flex;
+    justify-content: center;
+    background-color: #2B64A1;
+    margin-bottom: 24px;
+}
+
+.container_text_contact{
+    width: 50%;
+    height: 100%;
+}
+
+.title_contact {
+    text-align: center;
+    font-size: 24px;
+    color: white;
+}
+
+.title_contact span {
+    font-weight: bold;
+}
+
+.form_contact form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.form_contact .input_container{
+    margin: 10px;
+}
+
+.form_contact .input_container input, select {
+    width: 170px;
+    height: 46px;
+    border: none;
+    border-radius: 4px;
+}
+
+/* Paises */
+.form_contact .input_container:nth-child(5){
+    grid-column: 1 / span 2;
+}
+
+/* Area de Texto */
+.form_contact .input_container:nth-child(6){
+    grid-column: 1 / span 2;
+}
+
+/* Checkbox */
+.form_contact .input_container:nth-child(7){
+    grid-column: 1 / span 2;
+}
+
+/* Botón */
+.form_contact .input_container:nth-child(8){
+    grid-column: 1 / span 2;
+}
+
+#paises {
+    width: 100%;
+}
+
+#texto {
+    width: 100%;
+}
+
+#checkbox {
+
+}
+
+#button {
+    
+}
+
+
+.boton{
+    color: #FFF9F9; 
+    font-family: 'Poppins', sans-serif; 
+    font-size: 20px; 
+    text-decoration: none;
+}
+
+.enlace{
+    list-style-type: none; 
+}
+
+footer {
+    display: flex;
+    background-color: #2B64A1;
+    justify-content: space-around;
+    height: auto;
+    width: 100vw;
+    position: static;
+    bottom: 0;
+}
+
+.title_footer{
+    color: #FFF9F9; 
+    font-size: 25px; 
+}
+
+.columna {
+    color: #fff;
+}
+
+.redes{
+    list-style-type: none; 
+}
+
+#faqShow {
+    background-color: transparent; 
+    border: none; 
+    color: #FFF9F9; 
+    cursor: pointer; 
+    padding: 0; 
+    font-family: 'Poppins', sans-serif; 
+    font-size: 20px; 
+}
+#terShow {
+    background-color: transparent; 
+    border: none; 
+    color: #FFF9F9; 
+    cursor: pointer; 
+    padding: 0; 
+    font-family: 'Poppins', sans-serif; 
+    font-size: 20px; 
+}
+#dataShow {
+    background-color: transparent; 
+    border: none; 
+    color: #FFF9F9; 
+    cursor: pointer; 
+    padding: 0; 
+    font-family: 'Poppins', sans-serif; 
+    font-size: 20px; 
+}
+
+#faqDialog h1 {
+    color: #2B64A1; 
+    font-family: 'Poppins', sans-serif; 
+}
+#faqDialog button {
+    background-color: #2B64A1; 
+    color: white; 
+}
+
+#terDialog h1 {
+    color: #2B64A1; 
+    font-family: 'Poppins', sans-serif; 
+}
+#terDialog button {
+    background-color: #2B64A1; 
+    color: white; 
+}
+
+#dataDialog h1 {
+    color: #2B64A1; 
+    font-family: 'Poppins', sans-serif; 
+}
+#dataDialog button {
+    background-color: #2B64A1; 
+    color: white; 
+}
+
+#faqDialog button {
+  align-items: center;
+  appearance: none;
+  background-color: #3EB2FD;
+  background-image: linear-gradient(1deg, #4ffd97, #149BF3 99%);
+  background-size: calc(100% + 20px) calc(100% + 20px);
+  border-radius: 100px;
+  border-width: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: CircularStd,sans-serif;
+  font-size: 1rem;
+  height: auto;
+  justify-content: center;
+  line-height: 1.5;
+  padding: 6px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color .2s,background-position .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
